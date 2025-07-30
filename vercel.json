@@ -1,18 +1,6 @@
 {
   "version": 2,
   "name": "cors-proxy",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/proxy",
-      "dest": "/api/proxy"
-    }
-  ],
   "functions": {
     "app/api/proxy/route.js": {
       "maxDuration": 30
